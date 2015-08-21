@@ -100,7 +100,7 @@ if ( ! class_exists( 'YITH_WFBT_Admin' ) ) {
 
 			//Add action links
 			add_filter( 'plugin_action_links_' . plugin_basename( YITH_WFBT_DIR . '/' . basename( YITH_WFBT_FILE ) ), array( $this, 'action_links' ) );
-			//add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 4 );
+			add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 4 );
 
 			// Premium Tab
 			add_action( 'yith_wfbt_premium', array( $this, 'premium_tab' ) );
@@ -134,7 +134,7 @@ if ( ! class_exists( 'YITH_WFBT_Admin' ) ) {
 		 */
 		public function action_links( $links ) {
 			$links[] = '<a href="' . admin_url( "admin.php?page={$this->_panel_page}" ) . '">' . __( 'Settings', 'ywbt' ) . '</a>';
-			//  $links[] = '<a href="' . $this->get_premium_landing_uri() . '" target="_blank">' . __( 'Premium Version', 'ywbt' ) . '</a>';
+			$links[] = '<a href="' . $this->get_premium_landing_uri() . '" target="_blank">' . __( 'Premium Version', 'ywbt' ) . '</a>';
 
 			return $links;
 		}
@@ -165,8 +165,8 @@ if ( ! class_exists( 'YITH_WFBT_Admin' ) ) {
 			$args = array(
 				'create_menu_page' => true,
 				'parent_slug'      => '',
-				'page_title'       => __( 'Frequently Bought Together', 'ywbt' ),
-				'menu_title'       => __( 'Frequently Bought Together', 'ywbt' ),
+				'page_title'       => _x( 'Frequently Bought Together', 'plugin name in admin page title', 'ywbt' ),
+				'menu_title'       => _x( 'Frequently Bought Together', 'plugin name in admin WP menu', 'ywbt' ),
 				'capability'       => 'manage_options',
 				'parent'           => '',
 				'parent_page'      => 'yit_plugin_panel',
@@ -237,7 +237,7 @@ if ( ! class_exists( 'YITH_WFBT_Admin' ) ) {
 		public function add_bought_together_tab( $tabs ){
 
 			$tabs['yith-wfbt'] = array(
-				'label'  => __( 'Frequently Bought Together', 'ywbt' ),
+				'label'  => _x( 'Frequently Bought Together', 'tab in product data box', 'ywbt' ),
 				'target' => 'yith_wfbt_data_option',
 				'class'  => array( 'hide_if_grouped', 'hide_if_external' ),
 			);

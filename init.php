@@ -3,7 +3,7 @@
  * Plugin Name: YITH WooCommerce Frequently Bought Together
  * Plugin URI: http://yithemes.com/
  * Description: YITH WooCommerce Frequently Bought Together add a box in single product page with products suggested as "frequently bought together"
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Yithemes
  * Author URI: http://yithemes.com/
  * Text Domain: ywbt
@@ -11,7 +11,7 @@
  *
  * @author Yithemes
  * @package YITH WooCommerce Frequently Bought Together
- * @version 1.0.1
+ * @version 1.0.2
  */
 /*  Copyright 2015  Your Inspiration Themes  (email : plugins@yithemes.com)
 
@@ -59,7 +59,7 @@ register_activation_hook( __FILE__, 'yith_plugin_registration_hook' );
 
 
 if ( ! defined( 'YITH_WFBT_VERSION' ) ){
-	define( 'YITH_WFBT_VERSION', '1.0.1' );
+	define( 'YITH_WFBT_VERSION', '1.0.2' );
 }
 
 if ( ! defined( 'YITH_WFBT_FREE_INIT' ) ) {

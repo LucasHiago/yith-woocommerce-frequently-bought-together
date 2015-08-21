@@ -2,8 +2,8 @@
 Contributors: yithemes
 Tags: yith, woocommerce, wc, shop, frequently bought together, bought together, bundles, products, frequently bought products, bought, together, product group, add to cart, cart
 Requires at least: 4.0
-Tested up to: 4.2.3
-Stable tag: 1.0.1
+Tested up to: 4.3
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,13 @@ Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woo
 
 == Changelog ==
 
+= 1.0.2 =
+
+* Added: Compatibility with WooCommerce 2.4.x
+* Added: Compatibility with WordPress 4.3
+* Added: ITA Translation
+* Updated: Plugin Core
+
 = 1.0.1 =
 
 * Initial release
@@ -55,6 +62,9 @@ If you have created your own language pack, or have an update for an existing on
 
 == Upgrade notice ==
 
-= 1.0.1 =
+= 1.0.2 =
 
-* Initial release
+* Added: Compatibility with WooCommerce 2.4.x
+* Added: Compatibility with WordPress 4.3
+* Added: ITA Translation
+* Updated: Plugin Core
